@@ -10,6 +10,7 @@ header{
     background-color: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -60,11 +61,9 @@ nav li a{
     width: 100%;
     margin-top: 20px;
 }
-
 main{
-    max-width: 1440px;
-    margin: 70px auto;
-    
+    margin: 70px 90px;
+
 }
 .team-container{
     display: flex;
@@ -91,6 +90,45 @@ main{
     color: #FF900E;
     font-weight: 700;
 }
+.features-sec{
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+.features-sec .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+
+}
+
+.features-sec .card{
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-img img{
+    height: 70%;
+    margin-left: 50px;
+}
+.ten-years{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 330px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.ten-years P{
+    font-size: 1.5rem;
+}
 .fact-card-container{
     display: flex;
     justify-content: space-around;
@@ -114,21 +152,38 @@ main{
     text-align: center;
     padding: 30px;
 }
+.sponsors{
+    text-align: center;
+}
+.sec-img{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+.sec-img img{
+    width: 165px;
+}
 
 /* for mobile */
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
     }
-    nav, .team-container{
+    nav, .team-container, .fact-card-container, .sec-img, .features-sec{
         flex-direction: column;
     }
     .team-img{
         grid-template-columns: 1fr;
     }
-    .team-content{
+    .team-content, .fact-card-container{
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .feature-img img{
+        width: 80%;
+        margin-left: 0;
 }
 
 /* for tablet */
@@ -136,7 +191,7 @@ main{
     header{
         padding: 50px;
     }
-    nav, .team-container{
+    nav, .team-container, .sec-img{
         flex-direction: column;
     }
     
